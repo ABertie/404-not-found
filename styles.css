@@ -1,0 +1,77 @@
+:root{
+    --color-light: #ffffff;
+    --color-gray-1: #333333;
+    --color-gray-2: #4f4f4f;
+    --color-gray-3: #bdbdbd;
+
+    --font-base: 'Space Mono', monospace;
+    --font-head: 'Inconsolata', monospace;
+    --font-footer: 'Montserrat', Sans-Serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 4vh 4vh 2vh;
+}
+
+header{
+    background-color: var(--color-light);
+
+    font-family: var(--font-base);
+    color: var(--color-gray-1);
+    line-height: 25px;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+main{
+    background-color: var(--color-light);
+
+    font-family: var(--font-base);
+}
+
+footer{
+    background-color: var(--color-light);
+
+    font-family: var(--font-footer);
+    color: var(--color-gray-3);
+    text-align: center;
+    font-size: small;
+}
+
+.hero{
+    display: grid;
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+}
+
+.hero img{
+    grid-row: 1;
+    grid-column: 1;
+
+    width: 100%;
+}
+
+.hero section{
+    grid-row: 1;
+    grid-column: 2;
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.hero section button{
+    text-transform: uppercase;
+}
